@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About",
+      "description": "Some Assembly Required",
+      "author": [],
+      "contents": "\nStephanie Hazlitt\nI am a PhD research and data scientist living in Victoria, British Columbia, Canada 🇨🇦. This is my personal blog space where I (infrequently) assemble some data and code and writing.\n@stephhazlitt\n@stephhazlitt\nORCID iD\nThis site is built using R and the distill 📦, the source code is available at https://github.com/stephhazlitt/stephhazlitt.ca.\n\n\n\n",
+      "last_modified": "2020-09-23T23:16:55-07:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Some Assembly Required",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-09-23T23:16:55-07:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
