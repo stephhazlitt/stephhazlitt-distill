@@ -17,5 +17,5 @@ I am a PhD research and data scientist living in Victoria, British Columbia, Can
   - `r fontawesome::fa("github")` [`@stephhazlitt`](https://www.github.com/stephhazlitt)
   - `r fontawesome::fa("circle", fill = "#A6CE39")` [ORCID iD](https://orcid.org/0000-0002-3161-2304)
   
-This site is built using [R](https://www.r-project.org/) and the [`distill`](https://rstudio.github.io/distill/) `r emo::ji("package")`, the source code is available at [https://github.com/stephhazlitt/stephhazlitt.ca](https://github.com/stephhazlitt/stephhazlitt.ca).
+This site is built using [R](https://www.r-project.org/) and the [`distill`](https://rstudio.github.io/distill/) `r emo::ji("package")`, the source code is available at [https://github.com/stephhazlitt/stephhazlitt-distill](https://github.com/stephhazlitt/stephhazlitt-distill).
   
