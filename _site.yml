@@ -1,11 +1,13 @@
 name: "stephhazlitt"
 title: "Some Assembly Required"
 description: |
-  Some Assembly Required
+  A personal blog space for assembling some data and code and writing
 output_dir: "_site"
+creative_commons: CC BY-SA
+repository_url: https://github.com/stephhazlitt/stephhazlitt-distill
 navbar:
   right:
-    - text: "Home"
+    - text: "Blog"
       href: index.html
     - text: "About"
       href: about.html
