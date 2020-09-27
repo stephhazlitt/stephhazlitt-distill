@@ -6,11 +6,7 @@ output_dir: "_site"
 creative_commons: CC BY-SA
 repository_url: https://github.com/stephhazlitt/stephhazlitt-distill
 base_url: https://github.com/stephhazlitt
-favicon: images/favicon.ico
 navbar:
-  logo:
-    image: images/wrench.png
-    href: https://stephhazlitt.ca
   right:
     - text: "Posts"
       href: index.html
