@@ -1,5 +1,5 @@
 ---
-title: "Some Assembly Required"
+title: "Blog Posts"
 site: distill::distill_website
 listing: posts
 ---
