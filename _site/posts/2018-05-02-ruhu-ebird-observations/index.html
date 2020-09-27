@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+  <!--radix_placeholder_meta_tags-->
+<title>Some Assembly Required: Where aRe the Rufous Hummingbirds?</title>
+
+<meta property="description" itemprop="description" content="Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast."/>
+
+<link rel="canonical" href="https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2018-05-02"/>
+<meta property="article:created" itemprop="dateCreated" content="2018-05-02"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Some Assembly Required: Where aRe the Rufous Hummingbirds?"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast."/>
+<meta property="og:url" content="https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Some Assembly Required"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Some Assembly Required: Where aRe the Rufous Hummingbirds?"/>
+<meta property="twitter:description" content="Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast."/>
+<meta property="twitter:url" content="https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["creative_commons","title","description","output","date","citation_url","canonical_url"]}},"value":[{"type":"character","attributes":{},"value":["CC BY-SA"]},{"type":"character","attributes":{},"value":["Where aRe the Rufous Hummingbirds?"]},{"type":"character","attributes":{},"value":["Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast."]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["05-02-2018"]},{"type":"character","attributes":{},"value":["https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/"]},{"type":"character","attributes":{},"value":["https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["ruhu-ebird-observations_files/bowser-1.9.3/bowser.min.js","ruhu-ebird-observations_files/distill-2.2.21/template.v2.js","ruhu-ebird-observations_files/header-attrs-2.3/header-attrs.js","ruhu-ebird-observations_files/jquery-1.11.3/jquery.min.js","ruhu-ebird-observations_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: hidden;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.3/header-attrs.js"></script>
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<style type="text/css">
+//
+//.distill-site-footer {
+// background-color: #000;
+//  color: #ffffff;
+//}
+//
+//.distill-site-header {
+//  color: #000;
+//  background-color: #2171b5;
+//  font-size: 15px;
+//  font-weight: 400;
+//}
+
+</style>
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Where aRe the Rufous Hummingbirds?","description":"Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast.","authors":[],"publishedDate":"2018-05-02T00:00:00.000-07:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="../../index.html" class="title">Some Assembly Required</a>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Posts</a>
+<a href="../../about.html">About</a>
+<a href="https://twitter.com/stephhazlitt">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a href="https://github.com/stephhazlitt">
+<i class="fa fa-github" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Where aRe the Rufous Hummingbirds?</h1>
+<p><p>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast. <br> <br> May 2, 2018</p></p>
+</div>
+
+
+<div class="d-article">
+<p><img src = "images/vnhs_ruhu_tweet.png" width = "500"></img></p>
+<p>When I saw the above analysis by my friend <a href="https://twitter.com/DavidFFraser">Dave Fraser</a>, I thought 💭:</p>
+<ul>
+<li>cool analysis!</li>
+<li>citizen science + <a href="https://ebird.org/">eBird</a> is awesome!</li>
+<li>have I seen a Rufous Hummingbird 🐦 lately?</li>
+</ul>
+<p>and <em>then</em> I thought …</p>
+<ul>
+<li>maybe you could do that analysis in R? 💡</li>
+</ul>
+<p>And it turns out you can.</p>
+<h2 id="getting-the-ebird-data">Getting the <a href="https://ebird.org/">eBird</a> Data</h2>
+<p>You can get up-to-date eBird data via the <a href="https://ebird.org/explore">eBird website’s View &amp; Explore options</a>, but I was hoping to include more historical data and didn’t want to click that often. The <a href="https://ebird.org/science/download-ebird-data-products">full eBird data set</a> is available for download, but it is updated quarterly—so will not have the very recent observation records we are after. Sigh 😞.</p>
+<p>Then I talked to <a href="https://github.com/ateucher">Andy Teucher</a> about my eBird data woes. He introduced me to the <a href="https://ropensci.org/">rOpenSci</a> <a href="https://www.r-project.org/">R</a> package 📦 <a href="https://cran.r-project.org/web/packages/rebird/index.html"><code>rebird</code></a>—he is one of the package coauthors! 👍</p>
+<p>The <a href="https://cran.r-project.org/web/packages/rebird/index.html"><code>rebird</code></a> package 📦 provides an interface with the eBird webservices—which in regular english means it goes and gets the eBird data from the web. It also returns the data in a <a href="https://www.jstatsoft.org/article/view/v059i10">tidy</a> format, meaning the data are ready to work with the popular <a href="https://www.tidyverse.org/">tidyverse R packages</a> 📦 that many of us new to R have used to ease our way into coding.</p>
+<p>OK, so let’s start by pulling <em>A LOT</em> of eBird data—50 years seems like a lot?</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="co">#load R packages we will need for getting the data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="kw">library</span>(rebird) <span class="co">#get eBird data from the web using ebirdfreq()</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="kw">library</span>(dplyr) <span class="co">#data munging</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="kw">library</span>(purrr) <span class="co">#map() for looping</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="co">#thanks Andy for the purrr help!</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="co">#function to get eBird data for many states/provinces using rebird R package</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a>map_state &lt;-<span class="st">  </span><span class="cf">function</span>(state) {</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a>  <span class="kw">map_dfr</span>(<span class="dv">1968</span><span class="op">:</span><span class="dv">2018</span>, <span class="op">~</span><span class="st"> </span>{</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a>    <span class="kw">ebirdfreq</span>(<span class="st">&quot;states&quot;</span>, state, .x, .x, <span class="dv">1</span>, <span class="dv">5</span>) <span class="op">%&gt;%</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="st">      </span><span class="kw">filter</span>(comName <span class="op">==</span><span class="st"> &quot;Rufous Hummingbird&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="st">      </span><span class="kw">mutate</span>(<span class="dt">year =</span> .x, <span class="dt">state =</span> state)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true"></a>  })</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true"></a>}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true"></a><span class="co">#get eBird data for west coast state/provinces</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true"></a>ruhu_raw &lt;-<span class="st"> </span><span class="kw">map_dfr</span>(<span class="kw">c</span>(<span class="st">&quot;CA-BC&quot;</span>,<span class="st">&quot;US-CA&quot;</span>,<span class="st">&quot;US-WA&quot;</span>, <span class="st">&quot;US-OR&quot;</span>), <span class="op">~</span><span class="st"> </span>{</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true"></a>      <span class="kw">map_state</span>(.x)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true"></a>})</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true"></a><span class="kw">head</span>(ruhu_raw)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 6
+##   comName            monthQt    frequency sampleSize  year state
+##   &lt;chr&gt;              &lt;chr&gt;          &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;chr&gt;
+## 1 Rufous Hummingbird January-1         0.        14.  1968 CA-BC
+## 2 Rufous Hummingbird January-2         0.         9.  1968 CA-BC
+## 3 Rufous Hummingbird January-3         0.        11.  1968 CA-BC
+## 4 Rufous Hummingbird January-4         0.        14.  1968 CA-BC
+## 5 Rufous Hummingbird February-1        0.        15.  1968 CA-BC
+## 6 Rufous Hummingbird February-2        0.        14.  1968 CA-BC</code></pre>
+<p>The eBird data provided by <a href="https://cran.r-project.org/web/packages/rebird/index.html"><code>rebird</code></a> is indeed very tidy. 🎁 Let’s take a moment to cheers the <a href="https://github.com/ropensci/rebird/graphs/contributors">authors of and contributers to</a> this open source R package. 🎉</p>
+<h2 id="some-data-wrangling">Some Data Wrangling</h2>
+<p>There is still a bit of data cleaning or wrangling to do—there alway is and it would be less fun if there wasn’t 😉. We need to do something with the <code>monthQt</code> variable. This is our time variable, which we need for plotting. Right now it is coded as a character variable and it needs to be recognized as a date. And you might notice some zeros in the 2018 weeks that we have not yet lived—or birded. Let’s filter out those zeros, they should really have been <code>NA</code>s?</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="co">#we need a few more packages</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a><span class="kw">library</span>(stringr) <span class="co">#clean up variables</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true"></a><span class="kw">library</span>(lubridate) <span class="co">#make date data dates</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true"></a><span class="kw">library</span>(tidyr) <span class="co">#separate month and quarter</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true"></a>ruhu_clean &lt;-<span class="st"> </span>ruhu_raw <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true"></a><span class="st">  </span><span class="kw">separate</span>(monthQt, <span class="kw">c</span>(<span class="st">&quot;month&quot;</span>, <span class="st">&quot;week&quot;</span>), <span class="dt">sep =</span> <span class="st">&quot;-&quot;</span>) <span class="op">%&gt;%</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">day =</span> <span class="kw">case_when</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true"></a>    week <span class="op">==</span><span class="st"> </span><span class="dv">1</span> <span class="op">~</span><span class="st"> </span><span class="dv">1</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true"></a>    week <span class="op">==</span><span class="st"> </span><span class="dv">2</span> <span class="op">~</span><span class="st"> </span><span class="dv">8</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true"></a>    week <span class="op">==</span><span class="st"> </span><span class="dv">3</span> <span class="op">~</span><span class="st"> </span><span class="dv">15</span>,</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true"></a>    week <span class="op">==</span><span class="st"> </span><span class="dv">4</span> <span class="op">~</span><span class="st"> </span><span class="dv">23</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true"></a>  )) <span class="op">%&gt;%</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">date =</span> <span class="kw">ymd</span>(<span class="kw">paste0</span>(year, <span class="st">&quot;-&quot;</span>,month,<span class="st">&quot;-&quot;</span>,day))) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">week =</span> lubridate<span class="op">::</span><span class="kw">week</span>(date)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(sampleSize <span class="op">!=</span><span class="st"> </span><span class="dv">0</span>) <span class="co">#filter out any zero that is actually an NA</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true"></a><span class="kw">head</span>(ruhu_clean)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 9
+##   comName    month  week frequency sampleSize  year state   day date      
+##   &lt;chr&gt;      &lt;chr&gt; &lt;dbl&gt;     &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt; &lt;chr&gt; &lt;dbl&gt; &lt;date&gt;    
+## 1 Rufous Hu… Janu…    1.        0.        14.  1968 CA-BC    1. 1968-01-01
+## 2 Rufous Hu… Janu…    2.        0.         9.  1968 CA-BC    8. 1968-01-08
+## 3 Rufous Hu… Janu…    3.        0.        11.  1968 CA-BC   15. 1968-01-15
+## 4 Rufous Hu… Janu…    4.        0.        14.  1968 CA-BC   23. 1968-01-23
+## 5 Rufous Hu… Febr…    5.        0.        15.  1968 CA-BC    1. 1968-02-01
+## 6 Rufous Hu… Febr…    6.        0.        14.  1968 CA-BC    8. 1968-02-08</code></pre>
+<p>That looks 👀 better!</p>
+<h2 id="some-exploratory-data-visualizing">Some Exploratory Data Visualizing</h2>
+<p>Now let’s have a quick, exploratory look 👀 at what data we have, starting just with British Columbia.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a><span class="co">#we need another package</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true"></a><span class="kw">library</span>(ggplot2) <span class="co">#plotting</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true"></a>ruhu_clean <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>) <span class="op">%&gt;%</span><span class="st">  </span><span class="co">#just B.C.</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>) <span class="op">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/pre-viz-1.png" style="display: block; margin: auto;" /></p>
+<p>There seems to be a lot of very high frequency values in the data set (frequency = 1.0), which is a bit puzzling—all the birds observed were Rufous Hummingbirds ❓. Let’s colour the lines for each year—using a continuous colour scale—to see if we learn something.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a>ruhu_clean <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>) <span class="op">%&gt;%</span><span class="st">  </span><span class="co">#just B.C.</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> year)) <span class="op">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/colour-years-1.png" style="display: block; margin: auto;" /></p>
+<p>Hmmmmm…this shows that most of that puzzling data is pre-2000s. eBird launched in 2002, with birders able to enter observations instantly via smartphones. Andy—a birder and contributor to eBird—mentioned that maybe the older records are being entered by birders going through past checklists &amp; field notebooks. Filtering out the pre-2002 data seems like a reasonable approach?</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> &lt;-<span class="st"> </span>ruhu_clean <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">&gt;</span><span class="st"> </span><span class="dv">2001</span>) </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>) <span class="op">%&gt;%</span><span class="st">  </span><span class="co">#just B.C.</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> year)) <span class="op">+</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/filter-years-1.png" style="display: block; margin: auto;" /></p>
+<p>Looks 👀 better!</p>
+<h2 id="how-do-2018-observation-frequencies-compare-with-historical-data">How Do 2018 🐦 Observation Frequencies Compare with Historical Data?</h2>
+<p>Let’s use some colour to distinguish the 2018 data from the 2002-2017 observation frequencies.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true"></a><span class="co">#make a small df with just 2018 data</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true"></a>df_bc_<span class="dv">2018</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>, year <span class="op">==</span><span class="st"> </span><span class="dv">2018</span>) </span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>),  <span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> df_bc_<span class="dv">2018</span>, <span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">name=</span><span class="ot">NULL</span>,</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true"></a>                      <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;2002-2017&quot;</span>, <span class="st">&quot;2018&quot;</span>),</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true"></a>                      <span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;grey&quot;</span>, <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/bc-plot-1.png" style="display: block; margin: auto;" /></p>
+<p>This plot confirms the original analysis with the first 2018 Rufous Hummingbird observations later than most years since 2002. However, the rate of increase in observation frequency seems to be similar.</p>
+<p>Let’s look at all the Pacific Coast data now?</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true"></a><span class="co">#make a small df with just 2018 data</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true"></a>df_<span class="dv">2018</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2018</span>) </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>),  <span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> df_<span class="dv">2018</span>, <span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>state, <span class="dt">ncol=</span><span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">name=</span><span class="ot">NULL</span>,</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true"></a>                      <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;2002-2017&quot;</span>, <span class="st">&quot;2018&quot;</span>),</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true"></a>                      <span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;grey&quot;</span>, <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/wc-plot-1.png" style="display: block; margin: auto;" /></p>
+<p>Interesting! But wait, while I’d like California to be a bit closer to British Columbia, I think I want the order of my facet plots to mirror the order along the Pacific Coast. Let’s make sure the variable <code>state</code> is a factor <em>and</em> in the order we want for plotting.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true"></a><span class="co">#we need another package</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true"></a><span class="kw">library</span>(forcats) <span class="co">#for wrangling factors</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true"></a><span class="co">#order for facet plotting</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true"></a>wc_order &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;CA-BC&quot;</span>,<span class="st">&quot;US-WA&quot;</span>,<span class="st">&quot;US-OR&quot;</span>,<span class="st">&quot;US-CA&quot;</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true"></a><span class="co">#make state a factor and order for facet plotting</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">state =</span> <span class="kw">factor</span>(state, <span class="dt">levels =</span> wc_order))</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true"></a></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true"></a><span class="co">#make a small df with just 2018 data</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true"></a>df_<span class="dv">2018</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2018</span>) </span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true"></a></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>),  <span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> df_<span class="dv">2018</span>, <span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>state, <span class="dt">ncol=</span><span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">name=</span><span class="ot">NULL</span>,</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true"></a>                      <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;2002-2017&quot;</span>, <span class="st">&quot;2018&quot;</span>),</span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true"></a>                      <span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;grey&quot;</span>, <span class="st">&quot;red&quot;</span>)) <span class="op">+</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>()</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/wc-plot-ordered-1.png" style="display: block; margin: auto;" /></p>
+<p>Looks 👀 better!</p>
+<p>And again, the plot confirms the original analysis—first observations are later and frequencies are lower for Rufous Hummingbirds, especially in Oregon, Washington and British Columbia.</p>
+<p>Let’s finish up with some window dressing for our plots, adding the usual suspects like a title and data attribution, and adding a nice silhouette of a hummingbird using the <code>rphylopic</code> R package 📦. Andy even suggested using the rufous colour—💯.</p>
+<p>So final plot for <strong>British Columbia</strong>:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true"></a><span class="co">#we need a couple more packages</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true"></a><span class="kw">library</span>(rphylopic) <span class="co">#for image, package from GitHub</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true"></a><span class="kw">library</span>(curl) <span class="co">#required by rphylopic function</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true"></a><span class="co">## add image</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true"></a>hummer &lt;-<span class="st"> </span><span class="kw">image_data</span>(<span class="st">&quot;679605a3-95f1-4f57-be33-568640aca7b9&quot;</span>, <span class="dt">size =</span> <span class="st">&quot;512&quot;</span>)[[<span class="dv">1</span>]]</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true"></a><span class="co">#make a small df with just 2018 data</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true"></a>df_bc_<span class="dv">2018</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>, year <span class="op">==</span><span class="st"> </span><span class="dv">2018</span>) </span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true"></a></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(state <span class="op">==</span><span class="st"> &quot;CA-BC&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>),  <span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> df_bc_<span class="dv">2018</span>, <span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;orange3&quot;</span>)) <span class="op">+</span></span>
+<span id="cb11-17"><a href="#cb11-17" aria-hidden="true"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">name=</span><span class="ot">NULL</span>,</span>
+<span id="cb11-18"><a href="#cb11-18" aria-hidden="true"></a>                      <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;2002-2017&quot;</span>, <span class="st">&quot;2018&quot;</span>),</span>
+<span id="cb11-19"><a href="#cb11-19" aria-hidden="true"></a>                      <span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;grey&quot;</span>, <span class="st">&quot;orange3&quot;</span>)) <span class="op">+</span></span>
+<span id="cb11-20"><a href="#cb11-20" aria-hidden="true"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Frequency of Rufous Hummingbird Observations</span><span class="ch">\n</span><span class="st">in British Columbia (2002-2018)&quot;</span>,</span>
+<span id="cb11-21"><a href="#cb11-21" aria-hidden="true"></a>       <span class="dt">caption =</span> <span class="st">&quot;Data from eBird&quot;</span>) <span class="op">+</span></span>
+<span id="cb11-22"><a href="#cb11-22" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb11-23"><a href="#cb11-23" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="kw">c</span>(<span class="fl">0.15</span>, <span class="fl">0.3</span>)) <span class="op">+</span></span>
+<span id="cb11-24"><a href="#cb11-24" aria-hidden="true"></a><span class="st">  </span><span class="kw">add_phylopic</span>(hummer, <span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">color =</span> <span class="st">&quot;orange3&quot;</span>, <span class="dt">ysize =</span> <span class="dv">7</span>, <span class="dt">x =</span> <span class="dv">45</span>, <span class="dt">y =</span> <span class="fl">.3</span>)</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/nice-bc-plot-1.png" style="display: block; margin: auto;" /></p>
+<p>and final plot for the <strong>Pacific Coast</strong>:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true"></a><span class="co">#order for facet plotting</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true"></a>wc_order &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;CA-BC&quot;</span>,<span class="st">&quot;US-WA&quot;</span>,<span class="st">&quot;US-OR&quot;</span>,<span class="st">&quot;US-CA&quot;</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true"></a><span class="co">#make state a factor and order for facet plotting</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">state =</span> <span class="kw">factor</span>(state, <span class="dt">levels =</span> wc_order))</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true"></a><span class="co">#make a small df with just 2018 data</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true"></a>df_<span class="dv">2018</span> &lt;-<span class="st"> </span>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true"></a><span class="st">  </span><span class="kw">filter</span>(year <span class="op">==</span><span class="st"> </span><span class="dv">2018</span>) </span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true"></a></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true"></a>ruhu_since_<span class="dv">2002</span> <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(<span class="dt">x =</span> week, <span class="dt">y =</span> frequency, <span class="dt">group =</span> year)) <span class="op">+</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;grey&quot;</span>),  <span class="dt">alpha =</span> <span class="fl">.5</span>) <span class="op">+</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true"></a><span class="st">  </span><span class="kw">geom_line</span>(<span class="dt">data =</span> df_<span class="dv">2018</span>, <span class="kw">aes</span>(<span class="dt">colour =</span> <span class="st">&quot;orange3&quot;</span>)) <span class="op">+</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span><span class="st"> </span>state, <span class="dt">ncol=</span><span class="dv">1</span>) <span class="op">+</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true"></a><span class="st">  </span><span class="kw">scale_colour_manual</span>(<span class="dt">name=</span><span class="ot">NULL</span>,</span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true"></a>                      <span class="dt">labels=</span><span class="kw">c</span>(<span class="st">&quot;2002-2017&quot;</span>, <span class="st">&quot;2018&quot;</span>),</span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true"></a>                      <span class="dt">values=</span><span class="kw">c</span>(<span class="st">&quot;grey&quot;</span>, <span class="st">&quot;orange3&quot;</span>)) <span class="op">+</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">title =</span> <span class="st">&quot;Frequency of Rufous Hummingbird Observations</span><span class="ch">\n</span><span class="st">Along the Pacific Coast (2002-2018)&quot;</span>,</span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true"></a>       <span class="dt">caption =</span> <span class="st">&quot;Data from eBird&quot;</span>) <span class="op">+</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme_minimal</span>() <span class="op">+</span></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true"></a><span class="st">  </span><span class="kw">theme</span>(<span class="dt">legend.position =</span> <span class="st">&quot;bottom&quot;</span>) <span class="op">+</span></span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true"></a><span class="st">  </span><span class="kw">add_phylopic</span>(hummer, <span class="dt">alpha =</span> <span class="fl">.7</span>, <span class="dt">color =</span> <span class="st">&quot;orange3&quot;</span>, <span class="dt">ysize =</span> <span class="dv">3</span>, <span class="dt">x =</span> <span class="dv">45</span>, <span class="dt">y =</span> <span class="fl">.3</span>)</span></code></pre></div>
+<p><img src="ruhu-ebird-observations_files/nice-wc-plot-1.png" style="display: block; margin: auto;" /></p>
+<p>OK, I know. The silhouette is <em>not</em> a Rufous Hummingbird. It is a <em>Topazza pella</em>—the Crimson Topaz—the only hummingbird image in the <a href="http://phylopic.org/name/11887b47-ae28-4389-aaf8-16e204197b5b">phylopic library</a>. At least it is a hummingbird?</p>
+<p>For more on Rufous Hummingbirds (<em>Selasphorus rufus</em>), you can read the <a href="https://birdsna.org/Species-Account/bna/species/rufhum/introduction">species account in the The Birds of North America series</a>.</p>
+<p>For keeping up with cool nature stuff in Victoria, British Columbia, you can follow the <a href="https://twitter.com/VictoriaNHS">Victoria Natural History Society twitter feed</a>.</p>
+<p>If you see 👀 a Rufous Hummingbird, you can add your observation to <a href="https://ebird.org/">eBird</a>.</p>
+<p><br></p>
+<h4 id="addendum-auk-a-better-hummingbird-image">ADDENDUM: AUK &amp; a better hummingbird image</h4>
+<p><img src = "images/phylopic_tweet.png" width = "500"></img></p>
+<p>If you want to wrangle the <a href="https://ebird.org/science/download-ebird-data-products">full eBird data set</a>, you might want to check out the <a href="https://www.r-project.org/">R</a> package 📦 <a href="https://cran.r-project.org/web/packages/auk/index.html"><code>AUK</code></a>, also recently onboarded at <a href="https://ropensci.org/">rOpenSci</a>.</p>
+<p>And thanks to the above tweet from <a href="https://twitter.com/PhyloPic">phylopic</a>, we have a final, final set of plots with an improved hummingbird image 😄.</p>
+<p><img src="ruhu-ebird-observations_files/final-bc-plot-1.png" style="display: block; margin: auto;" /></p>
+<p><img src="ruhu-ebird-observations_files/final-wc-plot-1.png" style="display: block; margin: auto;" /></p>
+
+<hr>
+
+<p>This exploration was a collaboration with <a href"https://github.com/ateucher">Andy Teucher</a>—Andy told me about <a href="(https://cran.r-project.org/web/packages/rebird/index.html">rebird</a> 📦, provided help with loops using the <a href="https://cran.r-project.org/web/packages/purrr/index.html">purrr</a> 📦, along with many other gReat suggestions. This post was originally published through <a href="https://github.com/stephhazlitt/ruhu-ebird-observations">GitHub.</a></p>
+
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom">
+  <h3 id="updates-and-corrections">Corrections</h3>
+  <p>If you see mistakes or want to suggest changes, please <a href="https://github.com/stephhazlitt/stephhazlitt-distill/issues/new">create an issue</a> on the source repository.</p>
+  <h3 id="reuse">Reuse</h3>
+  <p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Source code is available at <a href="https://github.com/stephhazlitt/stephhazlitt-distill">https://github.com/stephhazlitt/stephhazlitt-distill</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+</div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

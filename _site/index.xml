@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>Some Assembly Required</title>
+    <link>https://github.com/stephhazlitt</link>
+    <atom:link href="https://github.com/stephhazlitt/index.xml" rel="self" type="application/rss+xml"/>
+    <description>A personal blog space for assembling some data and code and writing
+</description>
+    <generator>Distill</generator>
+    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Where aRe the Rufous Hummingbirds?</title>
+      <link>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</link>
+      <description>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast.</description>
+      <guid>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</guid>
+      <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
