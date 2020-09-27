@@ -7,13 +7,22 @@
     <description>A personal blog space for assembling some data and code and writing
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>The Kids Are Coming, Let’s Get Ready</title>
+      <link>https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids</link>
+      <description>Explorating patterns of student population change in Greater Victoria, B.C.</description>
+      <guid>https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids</guid>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids/sd61-kids_files/sd61-actual-plots-1.png" medium="image" type="image/png" width="768" height="576"/>
+    </item>
     <item>
       <title>Where aRe the Rufous Hummingbirds?</title>
       <link>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</link>
       <description>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast.</description>
       <guid>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</guid>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/ruhu-ebird-observations_files/final-bc-plot-1.png" medium="image" type="image/png" width="768" height="576"/>
     </item>
   </channel>
 </rss>
