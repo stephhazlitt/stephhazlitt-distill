@@ -1,12 +1,32 @@
-//
-//.distill-site-footer {
-// background-color: #000;
-//  color: #ffffff;
-//}
-//
-//.distill-site-header {
+.distill-site-header .logo img{
+  max-height: 30px; /* Makes logo bigger, default was 20px */
+}
+
+.distill-site-header .logo {
+  font-size: 20px;
+}
+
+.distill-site-header .title {
+  font-size:20px;
+}
+
+.distill-site-header {
 //  color: #000;
-//  background-color: #2171b5;
-//  font-size: 15px;
+  background-color: #4292c6;
+  font-size: 20px;
 //  font-weight: 400;
-//}
+  padding-top: 3px;
+//  padding-bottom: 5px;
+}
+
+d-appendix {
+  background-color: #e6f3fc;
+  border-top: none !important;
+}
+
+/* Navbar Links with Animated Hover */ 
+
+
+
+
+
