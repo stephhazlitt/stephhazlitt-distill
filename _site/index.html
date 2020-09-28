@@ -90,6 +90,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"/>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
@@ -668,7 +669,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   }
 
   @media(min-width: 1000px) {
-    .d-contents {
+    .d-contents.d-contents-float {
       height: 0;
       grid-column-start: 1;
       grid-column-end: 4;
@@ -1443,18 +1444,38 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <style type="text/css">
-  //
-  //.distill-site-footer {
-  // background-color: #000;
-  //  color: #ffffff;
-  //}
-  //
-  //.distill-site-header {
+  .distill-site-header .logo img{
+    max-height: 30px; /* Makes logo bigger, default was 20px */
+  }
+
+  .distill-site-header .logo {
+    font-size: 20px;
+  }
+
+  .distill-site-header .title {
+    font-size:20px;
+  }
+
+  .distill-site-header {
   //  color: #000;
-  //  background-color: #2171b5;
-  //  font-size: 15px;
+    background-color: #4292c6;
+    font-size: 20px;
   //  font-weight: 400;
-  //}
+    padding-top: 3px;
+  //  padding-bottom: 5px;
+  }
+
+  d-appendix {
+    background-color: #e6f3fc;
+    border-top: none !important;
+  }
+
+  /* Navbar Links with Animated Hover */ 
+
+
+
+
+
 
   </style>
   <!--/radix_placeholder_site_in_header-->
@@ -1476,6 +1497,9 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
+<a class="logo" href="https://stephhazlitt.ca">
+<img src="images/phylopic_65ed3e2d_colrs.png" alt="Logo"/>
+</a>
 <a href="index.html" class="title">Some Assembly Required</a>
 </div>
 <div class="nav-right">
