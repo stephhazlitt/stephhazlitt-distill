@@ -12,7 +12,8 @@
 
 .distill-site-header {
 //  color: #000;
-  background-color: #4292c6;
+//  background-color: #4292c6;
+//  background-color: #023858;
   font-size: 20px;
 //  font-weight: 400;
   padding-top: 3px;
@@ -20,11 +21,10 @@
 }
 
 d-appendix {
-  background-color: #e6f3fc;
+  background-color: #f7fbff;
   border-top: none !important;
 }
 
-/* Navbar Links with Animated Hover */ 
 
 
 
