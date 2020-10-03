@@ -3,17 +3,16 @@ title: "Some Assembly Required"
 description: |
   A personal blog space for assembling some data and code and writing
 output_dir: "_site"
+author: "Stephanie Hazlitt"
 creative_commons: CC BY-SA
-repository_url: https://github.com/stephhazlitt/stephhazlitt-distill
-base_url: https://github.com/stephhazlitt
+base_url: https://github.com/stephhazlitt-distill
 favicon: images/favicon.ico
 navbar:
-
   logo:
     image: images/phylopic_65ed3e2d_distillcolrs.png
     href: https://stephhazlitt.ca
   right:
-    - text: "Posts"
+    - text: "Home"
       href: index.html
     - text: "About"
       href: about.html
