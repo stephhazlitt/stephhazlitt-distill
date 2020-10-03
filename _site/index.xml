@@ -2,32 +2,48 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
   <channel>
     <title>Some Assembly Required</title>
-    <link>https://github.com/stephhazlitt</link>
-    <atom:link href="https://github.com/stephhazlitt/index.xml" rel="self" type="application/rss+xml"/>
+    <link>https://github.com/stephhazlitt-distill</link>
+    <atom:link href="https://github.com/stephhazlitt-distill/index.xml" rel="self" type="application/rss+xml"/>
     <description>A personal blog space for assembling some data and code and writing
 </description>
     <image>
       <title>Some Assembly Required</title>
-      <url>https://github.com/stephhazlitt/images/favicon.ico</url>
-      <link>https://github.com/stephhazlitt</link>
+      <url>https://github.com/stephhazlitt-distill/images/favicon.ico</url>
+      <link>https://github.com/stephhazlitt-distill</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 16 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>When You Miss the Target 🎯</title>
+      <link>https://github.com/stephhazlitt-distill/posts/2019-02-26-wind-direction</link>
+      <description>A number of people suggested I look at wind direction 💨 to explain my fence drama. So I did.</description>
+      <guid>https://github.com/stephhazlitt-distill/posts/2019-02-26-wind-direction</guid>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/stephhazlitt-distill/posts/2019-02-26-wind-direction/images/final_plot-1.png" medium="image" type="image/png" width="1120" height="800"/>
+    </item>
+    <item>
+      <title>Weather with {weathercan} 🇨🇦</title>
+      <link>https://github.com/stephhazlitt-distill/posts/2019-02-25-fence</link>
+      <description>Using the {weathercan} R package 📦 to examine local wind patterns in Victoria, B.C.</description>
+      <guid>https://github.com/stephhazlitt-distill/posts/2019-02-25-fence</guid>
+      <pubDate>Mon, 25 Feb 2019 00:00:00 +0000</pubDate>
+      <media:content url="https://github.com/stephhazlitt-distill/posts/2019-02-25-fence/images/fence.jpg" medium="image" type="image/jpeg"/>
+    </item>
     <item>
       <title>The Kids Are Coming, Let’s Get Ready</title>
-      <link>https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids</link>
-      <description>Explorating patterns of student population change in Greater Victoria, B.C.</description>
-      <guid>https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids</guid>
+      <link>https://github.com/stephhazlitt-distill/posts/2018-10-16-sd61-kids</link>
+      <description>Exploring patterns of student population change in Greater Victoria, B.C.</description>
+      <guid>https://github.com/stephhazlitt-distill/posts/2018-10-16-sd61-kids</guid>
       <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/stephhazlitt/posts/2020-09-26-sd61-kids/sd61-kids_files/sd61-actual-plots-1.png" medium="image" type="image/png" width="768" height="576"/>
+      <media:content url="https://github.com/stephhazlitt-distill/posts/2018-10-16-sd61-kids/sd61-kids_files/sd61-actual-plots-1.png" medium="image" type="image/png" width="768" height="576"/>
     </item>
     <item>
       <title>Where aRe the Rufous Hummingbirds?</title>
-      <link>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</link>
-      <description>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast.</description>
-      <guid>https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations</guid>
+      <link>https://github.com/stephhazlitt-distill/posts/2018-05-02-ruhu-ebird-observations</link>
+      <description>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast</description>
+      <guid>https://github.com/stephhazlitt-distill/posts/2018-05-02-ruhu-ebird-observations</guid>
       <pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate>
-      <media:content url="https://github.com/stephhazlitt/posts/2018-05-02-ruhu-ebird-observations/ruhu-ebird-observations_files/final-bc-plot-1.png" medium="image" type="image/png" width="768" height="576"/>
+      <media:content url="https://github.com/stephhazlitt-distill/posts/2018-05-02-ruhu-ebird-observations/ruhu-ebird-observations_files/final-bc-plot-1.png" medium="image" type="image/png" width="768" height="576"/>
     </item>
   </channel>
 </rss>

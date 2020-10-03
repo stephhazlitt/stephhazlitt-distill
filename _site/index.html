@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://github.com/stephhazlitt/index.xml" />
+  <link rel="alternate" type="application/rss+xml" href="https://github.com/stephhazlitt-distill/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -1445,7 +1445,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   <!--radix_placeholder_site_in_header-->
   <style type="text/css">
   .distill-site-header .logo img{
-    max-height: 30px; /* Makes logo bigger, default was 20px */
+    max-height: 30px; /* makes logo bigger, default was 20px */
   }
 
   .distill-site-header .logo {
@@ -1453,7 +1453,8 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   }
 
   .distill-site-header .title {
-    font-size:20px;
+    font-size: 20px;
+    font-weight: 400;
   }
 
   .distill-site-header {
@@ -1461,7 +1462,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
   //  background-color: #4292c6;
   //  background-color: #023858;
     font-size: 20px;
-  //  font-weight: 400;
+    font-weight: 400;
     padding-top: 3px;
   //  padding-bottom: 5px;
   }
@@ -1470,6 +1471,10 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
     background-color: #f7fbff;
     border-top: none !important;
   }
+
+  //.distill-site-nav a:hover {
+  //  color: #;
+  //}
 
 
 
@@ -1503,7 +1508,7 @@ code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warni
 <a href="index.html" class="title">Some Assembly Required</a>
 </div>
 <div class="nav-right">
-<a href="index.html">Posts</a>
+<a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="https://twitter.com/stephhazlitt">
 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -1865,19 +1870,49 @@ function init_posts_list() {
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Blog Posts">Blog Posts</h1>
-<a href="posts/2020-09-26-sd61-kids/" class="post-preview">
+<a href="posts/2019-02-26-wind-direction/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Feb. 26, 2019</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2019-02-26-wind-direction/images/final_plot-1.png"/>
+</div>
+<div class="description">
+<h2>When You Miss the Target 🎯</h2>
+<div class="dt-tags"></div>
+<p>A number of people suggested I look at wind direction 💨 to explain my fence drama. So I did.</p>
+</div>
+</a>
+<a href="posts/2019-02-25-fence/" class="post-preview">
+<script class="post-metadata" type="text/json">{"categories":[]}</script>
+<div class="metadata">
+<div class="publishedDate">Feb. 25, 2019</div>
+<div class="dt-authors"></div>
+</div>
+<div class="thumbnail">
+<img src="posts/2019-02-25-fence/images/fence.jpg"/>
+</div>
+<div class="description">
+<h2>Weather with {weathercan} 🇨🇦</h2>
+<div class="dt-tags"></div>
+<p>Using the {weathercan} R package 📦 to examine local wind patterns in Victoria, B.C.</p>
+</div>
+</a>
+<a href="posts/2018-10-16-sd61-kids/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
 <div class="publishedDate">Oct. 16, 2018</div>
 <div class="dt-authors"></div>
 </div>
 <div class="thumbnail">
-<img src="posts/2020-09-26-sd61-kids/sd61-kids_files/sd61-actual-plots-1.png"/>
+<img src="posts/2018-10-16-sd61-kids/sd61-kids_files/sd61-actual-plots-1.png"/>
 </div>
 <div class="description">
 <h2>The Kids Are Coming, Let’s Get Ready</h2>
 <div class="dt-tags"></div>
-<p>Explorating patterns of student population change in Greater Victoria, B.C.</p>
+<p>Exploring patterns of student population change in Greater Victoria, B.C.</p>
 </div>
 </a>
 <a href="posts/2018-05-02-ruhu-ebird-observations/" class="post-preview">
@@ -1892,7 +1927,7 @@ function init_posts_list() {
 <div class="description">
 <h2>Where aRe the Rufous Hummingbirds?</h2>
 <div class="dt-tags"></div>
-<p>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast.</p>
+<p>Exploring patterns of observation frequency of Rufous Hummingbirds along the Pacific Coast</p>
 </div>
 </a>
 </div>
@@ -1924,10 +1959,8 @@ function init_posts_list() {
 <!--/radix_placeholder_site_after_body-->
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
-<h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/stephhazlitt/stephhazlitt-distill/issues/new">create an issue</a> on the source repository.</p>
 <h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Source code is available at <a href="https://github.com/stephhazlitt/stephhazlitt-distill">https://github.com/stephhazlitt/stephhazlitt-distill</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
