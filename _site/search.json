@@ -5,14 +5,14 @@
       "title": "Stephanie Hazlitt",
       "author": [],
       "contents": "\nI am a research and data scientist living in Victoria, British Columbia, Canada 🇨🇦. This is my personal blog space where I (infrequently) assemble some data and code and writing.\n\n@stephhazlitt\n@stephhazlitt\nORCID iD\nThis site is built using R and the distill 📦, the source code is available at https://github.com/stephhazlitt/stephhazlitt-distill.\n\n\n\n\n",
-      "last_modified": "2020-10-02T21:38:08-07:00"
+      "last_modified": "2020-10-08T22:16:02-07:00"
     },
     {
       "path": "index.html",
       "title": "Blog Posts",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2020-10-02T21:45:20-07:00"
+      "last_modified": "2020-10-08T22:16:03-07:00"
     }
   ],
   "collections": ["posts/posts.json"]
