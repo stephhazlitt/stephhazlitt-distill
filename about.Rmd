@@ -6,6 +6,7 @@ title: "Stephanie Hazlitt"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 I am a research and data scientist living in Victoria, British Columbia, Canada `r emo::ji("canada")`. This is my personal blog space where I (infrequently) assemble some data and code and writing.
 
@@ -13,7 +14,7 @@ I am a research and data scientist living in Victoria, British Columbia, Canada 
 
   - `r fontawesome::fa("twitter", fill = "#1DA1F2")` [`@stephhazlitt`](https://www.twitter.com/stephhazlitt)
   - `r fontawesome::fa("github")` [`@stephhazlitt`](https://www.github.com/stephhazlitt)
-  - `r fontawesome::fa("circle", fill = "#A6CE39")` [ORCID iD](https://orcid.org/0000-0002-3161-2304)
+  - <span class="iconify icon:fa-brands:orcid icon-inline:false"></span> [ORCiD](https://orcid.org/0000-0002-3161-2304)
   
 
 This site is built using [R](https://www.r-project.org/) and the [`distill`](https://rstudio.github.io/distill/) `r emo::ji("package")`, the source code is available at [https://github.com/stephhazlitt/stephhazlitt-distill](https://github.com/stephhazlitt/stephhazlitt-distill).
