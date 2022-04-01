@@ -1,5 +1,26 @@
 ---
-title: "Blog Posts"
+title: "Stephanie Hazlitt"
 site: distill::distill_website
-listing: posts
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+I am a research and data scientist living in Victoria, British Columbia, Canada `r emo::ji("canada")`. This is my personal blog space where I (infrequently) assemble some data and code and writing.
+
+![](stephhazlitt-circle.png){width=25%}
+
+  - `r fontawesome::fa("twitter", fill = "#1DA1F2")` [`@stephhazlitt`](https://www.twitter.com/stephhazlitt)
+  - `r fontawesome::fa("github")` [`@stephhazlitt`](https://www.github.com/stephhazlitt)
+  - `r fontawesome::fa("orcid", fill = "#A5CE39")` [ORCiD](https://orcid.org/0000-0002-3161-2304)
+  
+  
+
+This site is built using [R](https://www.r-project.org/) and the [`distill`](https://rstudio.github.io/distill/) `r emo::ji("package")`, the source code is available at [https://github.com/stephhazlitt/stephhazlitt-distill](https://github.com/stephhazlitt/stephhazlitt-distill). Text and figures are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) unless otherwise noted.
+
+
+<!--
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+-->

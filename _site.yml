@@ -4,23 +4,25 @@ description: |
   A personal blog space for assembling some data and code and writing
 output_dir: "_site"
 author: "Stephanie Hazlitt"
-creative_commons: CC BY-SA
 base_url: https://github.com/stephhazlitt-distill
+# creative_commons: CC BY-SA
 favicon: images/favicon.ico
 navbar:
   logo:
     image: images/phylopic_65ed3e2d_distillcolrs.png
     href: https://stephhazlitt.ca
   right:
-    - text: "Home"
-      href: index.html
     - text: "About"
-      href: about.html
+      href: index.html
+    - text: "Blog"
+      href: blog.html
       navbar:
     - icon: fa fa-twitter
       href: https://twitter.com/stephhazlitt
     - icon: fa fa-github
       href: https://github.com/stephhazlitt
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/stephanie-hazlitt-4a1191227/
   search: false
 output: 
    distill::distill_article:

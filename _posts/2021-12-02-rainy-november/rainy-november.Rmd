@@ -1,0 +1,152 @@
+---
+title: "Unprecedented But Not Unexpected"
+description: |
+  Visualizing the Record Breaking Amounts of Autumn Rain on Vancouver Island.
+date: 2021-12-02
+output:
+  distill::distill_article:
+    self_contained: false
+citation: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE
+)
+
+# get R packages
+library(purrr)
+library(weathercan) #weather data from Environment Canada
+library(dplyr) #data munging
+library(ggplot2) #plotting
+library(sf) #mapping
+library(bcmaps) #get bc maps
+library(arrow) #use arrow for efficiency
+library(lubridate)
+```
+
+
+```{r}
+stations <-
+  stations_search(coords = c(49.32, -124.93), dist = 250) |>
+  distinct(station_id, .keep_all = TRUE)
+  # filter(end == 2021,
+  #        start <= 2010)
+
+mapview::mapview(st_as_sf(stations, coords = c("lon", "lat"),
+                          crs = 4326))
+
+stn_nums <- c(118, #victoria int
+              51337, #victoria int
+              702, #abbotsford
+              50308, #abbotsford
+              277, #tofino
+              65, #malahat
+              155, # comox
+              51319, #port hardy
+              202, #port hardy
+              283, #ucluelet
+              262, #pachena point
+              888, #vancouver harbour
+              925 # whiterock
+              ) 
+
+stn_nums <- stations |> pull(station_id)
+```
+
+
+```{r}
+data_weather <-
+  weather_dl(station_ids = stn_nums,
+             interval = "day",
+             string_as = NULL)
+
+# saveRDS(data_weather, "/Users/stephhazlitt/dev/data_weather.rds")
+# data_weather <- readRDS("/Users/stephhazlitt/dev/data_weather.rds")
+
+df_rain <- data_weather |>
+  select(station_id,
+         date,
+         year,
+         month,
+         total_precip,
+         total_precip_flag) |>
+  group_by(station_id, year, month) |>
+  summarise(month_precip = sum(total_precip)) |> 
+  mutate(year_mon = as_date(paste(year, month, "01", sep = "-")),
+         colr = case_when(year == "2021" ~ "colour",
+                           TRUE ~ "grey")) |> 
+  filter(year_mon != "2021-12-01")
+```
+
+```{r}
+walk(
+  stn_nums,
+  ~ weather_dl(
+    station_ids = .x,
+    interval = "day",
+    string_as = NULL
+  ) |>
+    write_dataset("/Users/stephhazlitt/dev/ec-weather-data/",
+                  format = "parquet",
+                  partitioning = c("year", "station_id"),
+                  hive_style = TRUE)
+)
+
+
+df_rain <- open_dataset("/Users/stephhazlitt/dev/ec-weather-data/") |> 
+  filter(station_id == 262) |> 
+  select(station_id,
+         date,
+         year,
+         month,
+         total_precip,
+         total_precip_flag) |>
+  group_by(station_id, year, month) |>
+  summarise(month_precip = sum(total_precip, na.rm = TRUE)) |> 
+  mutate(colr = ifelse(year == 2021, "colour", "grey")) |> 
+  # filter(!year == 2021 & !month == "12") |> 
+  collect()
+  
+  select(station_name,
+         station_id,
+         date,
+         year,
+         month,
+         total_precip,
+         total_precip_flag) |>
+  mutate(year_mon = paste(year, month, "01", sep = "-")) |>
+  group_by(station_id, year_mon, year, month) |>
+  summarise(month_precip = sum(total_precip, na.rm=TRUE)) |>
+  collect()
+
+
+
+
+```
+
+```{r}
+df_rain |>
+  # filter(station_id == 52) |>
+  ggplot(aes(month, month_precip, group = year, colour = colr)) +
+  geom_point() +
+  geom_line() +
+  scale_colour_manual(values = c("grey" = "grey80",
+                                 "colour" = "blue")) +
+  labs(x = NULL, y = NULL, colour = NULL) 
+  # facet_wrap(facets = vars(station_id))
+```
+
+
+```{r}
+  # bc_bound() |> 
+  # ggplot() +
+  # geom_sf() +
+  # geom_sf(data = st_as_sf(stations, coords = c("lon", "lat"),
+  #                         crs = 4326))
+```
+
